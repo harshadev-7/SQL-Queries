@@ -115,6 +115,9 @@ INSERT INTO order_details VALUES
 (20, 219, 107, 1),
 (21, 220, 108, 2);
 
+-- select all customers
+SELECT * from customers;
+
 -- get all orders with customers names and book titles
 select C.name, O.order_id,B.title,Od.quantity from Customers C
 join orders O on C.Customer_id = O.Customer_id 
